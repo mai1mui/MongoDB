@@ -1,0 +1,151 @@
+db.products.insertMany([
+  {
+    _id: 1,
+    name: "iPhone 15",
+    category: "phone",
+    brand: "Apple",
+    price: 1200,
+    stock: 50,
+    ratings: [5, 4, 5, 5],
+    discount: 10,
+    available: true
+  },
+  {
+    _id: 2,
+    name: "Galaxy S24",
+    category: "phone",
+    brand: "Samsung",
+    price: 950,
+    stock: 30,
+    ratings: [4, 4, 4],
+    discount: 5,
+    available: true
+  },
+  {
+    _id: 3,
+    name: "MacBook Pro 14",
+    category: "laptop",
+    brand: "Apple",
+    price: 2200,
+    stock: 15,
+    ratings: [5, 5, 5],
+    discount: 0,
+    available: true
+  },
+  {
+    _id: 4,
+    name: "ThinkPad X1 Carbon",
+    category: "laptop",
+    brand: "Lenovo",
+    price: 1800,
+    stock: 20,
+    ratings: [4, 4, 5],
+    discount: 15,
+    available: false
+  },
+  {
+    _id: 5,
+    name: "AirPods Pro",
+    category: "accessory",
+    brand: "Apple",
+    price: 250,
+    stock: 100,
+    ratings: [5, 4, 5, 4, 5],
+    discount: 20,
+    available: true
+  },
+  {
+    _id: 6,
+    name: "iPad Air",
+    category: "tablet",
+    brand: "Apple",
+    price: 800,
+    stock: 25,
+    ratings: [5, 5, 4],
+    discount: 10,
+    available: true
+  },
+  {
+    _id: 7,
+    name: "Surface Pro 9",
+    category: "tablet",
+    brand: "Microsoft",
+    price: 1100,
+    stock: 10,
+    ratings: [4, 5],
+    discount: 5,
+    available: true
+  },
+  {
+    _id: 8,
+    name: "Galaxy Buds 3",
+    category: "accessory",
+    brand: "Samsung",
+    price: 180,
+    stock: 200,
+    ratings: [4, 4, 3],
+    discount: 10,
+    available: true
+  },
+  {
+    _id: 9,
+    name: "Dell XPS 15",
+    category: "laptop",
+    brand: "Dell",
+    price: 1900,
+    stock: 12,
+    ratings: [5, 5, 4, 5],
+    discount: 5,
+    available: false
+  },
+  {
+    _id: 10,
+    name: "Logitech MX Master 3",
+    category: "accessory",
+    brand: "Logitech",
+    price: 120,
+    stock: 80,
+    ratings: [5, 4, 5],
+    discount: 25,
+    available: true
+  }
+])
+Tìm sản phẩm có trường ratings tồn tại.
+
+Tìm sản phẩm có giá từ 500 đến 2000.
+
+Tìm sản phẩm có ít nhất một rating = 5.
+
+Tìm sản phẩm không có sẵn trong kho (available = false).
+
+Tìm sản phẩm có thương hiệu khác “Apple”.
+
+Tìm sản phẩm có mảng ratings chứa cả giá trị 4 và 5.
+
+Tìm sản phẩm có mức giảm giá nhỏ hơn hoặc bằng 10%.
+
+Tìm sản phẩm có trường discount tồn tại.
+
+Tìm sản phẩm (brand = “Apple” hoặc “Samsung”) và stock < 50.
+
+Tìm sản phẩm có số lượng phần tử trong ratings = 3.
+
+Tìm sản phẩm có phần tử đầu tiên trong ratings bằng 5.
+
+Tìm sản phẩm có trường stock không tồn tại.
+
+Tìm sản phẩm có danh mục nằm trong ["laptop", "accessory"].
+
+Tìm sản phẩm của Apple và giá > 1000.
+
+Tìm sản phẩm có ít nhất một rating ≥ 5 (dùng $elemMatch).
+
+Tìm sản phẩm có trường price là kiểu Number.
+
+Tìm sản phẩm giá > 1000 hoặc brand khác “Apple”.
+
+Tìm sản phẩm thuộc danh mục “laptop” hoặc có giảm giá ≥ 15%.
+
+Tìm sản phẩm có trường available không tồn tại.
+
+Tìm các sản phẩm có giá lớn hơn 1000.

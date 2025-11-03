@@ -1,0 +1,35 @@
+//B1: Tao truoc user co quyen cao nhat la rootAdmin
+db.createUser({
+    user:"rootAdmin",
+    pwd:"root123",
+    roles:[{role:"root",db:"admin"}]
+})
+//B2. Vao file cogf, enable authentication len
+//C:\Program Files\MongoDB\Server\8.2\bin
+//security:
+//  authorization: enabled
+//show users
+db.getUsers()
+//tao user co quyen read
+db.createUser({
+  user:"readUser",
+  pwd:"read123",
+  roles:[
+    {role:"read",db:"schoolDB"}
+  ]
+})
+//login voi readUser
+db.auth("readUser","read123")
+//Lưu ý: Phai login lại admin
+//vi admin mới có quyền tạo user
+//nhớ là vừa login xong, phai qua database khác
+//rồi mới tạo user nhé
+//tao user co quyen readWrite
+//
+db.createUser({
+  user:"writeUser",
+  pwd:"write123",
+  roles:[
+    {role:"readWrite",db:"schoolDB"}
+  ]
+})

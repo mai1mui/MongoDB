@@ -1,0 +1,4 @@
+//kết nối với alats
+mongodb+srv://hanhmai:127897tT@mongodbaptech.x1dtvou.mongodb.net/
+//ket noi cu
+mongodb://localhost:27017
